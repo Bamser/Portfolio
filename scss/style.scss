@@ -1,0 +1,212 @@
+
+@import '_set';
+
+.header {
+    padding-bottom: 5rem;
+    nav {
+        position: fixed;
+        top: 0;
+        min-width: 117rem;
+        z-index: 1;
+    }
+.header__menu{
+padding-top: 3rem;
+ul {
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+ li {
+    color: #F3AE5F;
+    font-size: 1.8rem;
+    line-height: 1.2;
+    &:hover {
+        color: #014D69;
+        transform: scale(1.1);
+    }
+ }
+}
+}
+}
+.who {
+    margin-top: 10rem;
+    &__ami{
+        &-name {
+            margin-top: 5rem;
+        }
+    &-text {
+        margin: 3rem auto;
+    }
+    }
+}
+.skills {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+  
+    background-color: #014D69;
+    &__title {
+        text-align: center;
+        color: #F3AE5F ;
+    }
+    &__text {
+        margin: 3rem auto;
+        color: #F3AE5F ;
+        text-align: center;
+    }
+    &__items {
+        margin-top: 10rem;
+        display: flex;
+        justify-content: space-between;
+        gap: 3rem;
+    }
+    &__item {
+        padding: 1.5rem;
+        background-color: #0B87BA;
+        border-radius: 10%;
+        opacity: .9;
+        box-shadow: .7rem .7rem .7rem  rgba(0,0,0,0.7); 
+        img {
+            width: 15rem;
+            height: 10rem;
+           
+        }
+        &-text {
+            margin-top: 1rem;
+            text-align: center;
+            color: #F3AE5F;
+            font-size: 1.8rem;
+            line-height: 1.5;
+        }
+    }
+}
+.portfolio {
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    &__items {
+        margin-top: 8rem;
+        margin-bottom: 8rem;
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+    }
+    &__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 40rem;
+        overflow: hidden;
+        object-fit: cover;
+       & span {
+        font-size: 1.2rem;
+       }
+       & a:hover {
+        color: #F3AE5F;
+       }
+       &-text {
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 1.5;
+       }
+        &-link {
+         text-align: center;
+         margin-bottom: 1rem;
+        }
+        &-img {
+            padding-left: 10px;
+            padding-right: 10px;
+            width: 20rem;
+            height: 70rem;
+        }
+    }
+}
+.contacts {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background-color: #014D69;
+    &__title {
+        color: #F3AE5F ;
+    }
+    &__list {
+        margin-top: 3rem;
+        display: flex;
+        justify-content: center;
+        gap: 3rem;
+    }
+    &__item img {
+       width: 5rem;
+       height: 5rem;
+    }
+}
+
+@media (max-width:479.9px) {
+
+    .title {
+        font-size: 7rem;
+    }
+    .text {
+        font-size: 3rem;
+        max-width: 70rem;
+    }
+    .header {
+    .header__menu{
+    ul {
+     display: flex;
+     justify-content: space-between;
+     li {
+        font-size: 3rem;
+     }
+    }
+    }
+    }
+    .who {
+        &__ami{
+            margin-top: 5rem;
+            &-name {
+                margin-top: 8rem;
+            }
+        }
+    }
+    .skills {
+        padding-bottom: 20rem;
+        &__items {
+            justify-content: center;
+        }
+        &__item {
+            img {
+                width: 20rem;
+                height: 15rem;
+            }
+            &-text {
+                font-size: 3rem;
+            }
+        }
+    }
+    .portfolio {
+        margin-bottom: 20rem;
+        &__item{
+            & span {
+                font-size: 3rem;
+                line-height: 1;
+               }
+               & a:hover {
+                color: #F3AE5F;
+               }
+               &-text {
+                font-size: 5rem;
+                line-height: 1;
+               }
+        }
+    }
+    .contacts {
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+        background-color: #014D69;
+        &__list {
+            margin-top: 5rem;
+        }
+        &__item img {
+           width: 10rem;
+           height: 10rem;
+        }
+    }
+
+}
