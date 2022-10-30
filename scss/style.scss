@@ -9,6 +9,49 @@
         min-width: 117rem;
         z-index: 1;
     }
+
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+      }
+      
+      .list-item {
+        list-style-type: none;
+        flex-basis: 100%;
+        min-height: 80px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        color: #014D69;
+        transform: translateY(0);
+        transition: transform 0.5s ease, opacity 0.2s ease;
+        cursor: pointer;
+      }
+      
+      .list-item-name {
+        font-size: 15px;
+        font-weight: 500;
+        position: absolute;
+        transform: translate(0, 50px);
+        transition: transform 0.5s ease, opacity 0.2s ease;
+        opacity: 0;
+      }
+      
+      .list-item:hover {
+        color: #F3AE5F;
+        transform: translateY(-6px);
+        .list-item-name {
+          transform: translateY(30px);
+          opacity: 1;
+        }
+      }
+
+
+
+
 .header__menu{
 padding-top: 3rem;
 ul {
