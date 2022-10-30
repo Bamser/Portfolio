@@ -1,5 +1,7 @@
 
 @import '_set';
+$first-color: #014D69;
+$second-color: #F3AE5F;
 
 .header {
     padding-bottom: 5rem;
@@ -9,8 +11,6 @@
         min-width: 117rem;
         z-index: 1;
     }
-
-
     .navbar {
         display: flex;
         justify-content: space-between;
@@ -25,7 +25,7 @@
         align-items: center;
         justify-content: center;
         position: relative;
-        color: #014D69;
+        color: $first-color;
         transform: translateY(0);
         transition: transform 0.5s ease, opacity 0.2s ease;
         cursor: pointer;
@@ -41,10 +41,10 @@
       }
       
       .list-item:hover {
-        color: #F3AE5F;
+        color: $second-color;
         transform: translateY(-6px);
         .list-item-name {
-          transform: translateY(30px);
+          transform: translateY(35px);
           opacity: 1;
         }
       }
@@ -59,11 +59,11 @@ ul {
  justify-content: space-between;
  flex-wrap: wrap;
  li {
-    color: #F3AE5F;
+    color: $second-color;
     font-size: 1.8rem;
     line-height: 1.2;
     &:hover {
-        color: #014D69;
+        color: $first-color;
         transform: scale(1.1);
     }
  }
@@ -85,14 +85,14 @@ ul {
     padding-top: 10rem;
     padding-bottom: 10rem;
   
-    background-color: #014D69;
+    background-color: $first-color;
     &__title {
         text-align: center;
-        color: #F3AE5F ;
+        color: $second-color ;
     }
     &__text {
         margin: 3rem auto;
-        color: #F3AE5F ;
+        color: $second-color ;
         text-align: center;
     }
     &__items {
@@ -115,7 +115,7 @@ ul {
         &-text {
             margin-top: 1rem;
             text-align: center;
-            color: #F3AE5F;
+            color: $second-color;
             font-size: 1.8rem;
             line-height: 1.5;
         }
@@ -142,7 +142,7 @@ ul {
         font-size: 1.2rem;
        }
        & a:hover {
-        color: #F3AE5F;
+        color: $second-color;
        }
        &-text {
         text-align: center;
@@ -164,9 +164,9 @@ ul {
 .contacts {
     padding-top: 8rem;
     padding-bottom: 8rem;
-    background-color: #014D69;
+    background-color: $first-color;
     &__title {
-        color: #F3AE5F ;
+        color: $second-color ;
     }
     &__list {
         margin-top: 3rem;
@@ -231,7 +231,7 @@ ul {
                 line-height: 1;
                }
                & a:hover {
-                color: #F3AE5F;
+                color: $second-color;
                }
                &-text {
                 font-size: 5rem;
@@ -242,7 +242,7 @@ ul {
     .contacts {
         padding-top: 8rem;
         padding-bottom: 8rem;
-        background-color: #014D69;
+        background-color: $first-color;
         &__list {
             margin-top: 5rem;
         }

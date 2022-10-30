@@ -180,7 +180,7 @@ input[type=number] {
   transform: translateY(-6px);
 }
 .header .list-item:hover .list-item-name {
-  transform: translateY(30px);
+  transform: translateY(35px);
   opacity: 1;
 }
 .header .header__menu {
