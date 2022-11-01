@@ -10,6 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/e371c51c98.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/swiper-bundle.css">
     <title>Portfolio</title>
 </head>
 
@@ -42,7 +43,8 @@
                 </div>
                 <div class="who__ami">
                     <div class="who__ami-name title">Evgeny Roslyakov</div>
-                    <div class="who__ami-text text">Приветствую на своей страничке! Я junior-верстальщик, живу в Москве.
+                    <div class="who__ami-text text">Приветствую на своей страничке! Я занимаюсь версткой сайтов, живу в
+                        Москве.
                         Постоянно развиваюсь и осваиваю новые технологии.
                     </div>
                 </div>
@@ -54,7 +56,6 @@
         <div class=" container">
         <div class="skills__discription">
             <h2 class="skills__title title">Skills</h2>
-            <div class="skills__text text">Я обладаю следующими навыками.</div>
         </div>
         <div class="skills__items">
             <div class="skills__item">
@@ -64,7 +65,7 @@
             </div>
             <div class="skills__item">
                 <div class="skills__item-img"><img src="./image/css.svg" alt="css.svg"></div>
-                <div class="skills__item-text">3/5</div>
+                <div class="skills__item-text">4/5</div>
             </div>
             <div class="skills__item">
                 <div class="skills__item-img"><img src="./image/figma.svg" alt="figma.svg"></div>
@@ -76,7 +77,7 @@
             </div>
             <div class="skills__item">
                 <div class="skills__item-img"><img src="./image/git.svg" alt="git.svg"></div>
-                <div class="skills__item-text">1/5</div>
+                <div class="skills__item-text">2/5</div>
             </div>
         </div>
         </div>
@@ -86,53 +87,96 @@
         <div class="portfolio__title title">Portfolio</div>
         <div class="container">
             <div class="portfolio__items">
-                <div class="portfolio__item">
-                    <div class="portfolio__item-text">1 страница <br><span>(форма, Flexbox)</span>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="portfolio__item">
+                                <div class="portfolio__item-text">1 страница <br><span>(форма, Flexbox)</span>
+                                </div>
+                                <div class="portfolio__item-link text"><a href="https://locus.evgenyroslyakov.ru/"
+                                        target="_blank">Ссылка</a></div>
+                                <div class="portfolio__item-img"><img src="./image/Locus.webp" alt="Locus.webp"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio__item">
+                                <div class="portfolio__item-text">1 страница <br><span>(Flexbox)</span>
+                                </div>
+                                <div class="portfolio__item-link text"><a href="https://restaurant.evgenyroslyakov.ru/"
+                                        target="_blank">Ссылка</a>
+                                </div>
+                                <div class="portfolio__item-img"><img src="./image/Restaurant.webp"
+                                        alt="Restaurant.webp"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio__item">
+                                <div class="portfolio__item-text">4 страницы <br><span>(слайдер, Flexbox)</span>
+                                </div>
+                                <div class="portfolio__item-link text"><a href="https://maya.evgenyroslyakov.ru"
+                                        target="_blank">Ссылка</a></div>
+                                <div class="portfolio__item-img"><img src="./image/Maya.webp" alt="Maya.webp"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio__item">
+                                <div class="portfolio__item-text">1 страница <br><span>(адаптив
+                                        (480,768),слайдер,popup,forms,burger-menu)</span>
+                                </div>
+                                <div class="portfolio__item-link text"><a href="https://service.evgenyroslyakov.ru"
+                                        target="_blank">Ссылка</a></div>
+                                <div class="portfolio__item-img"><img src="./image/Service.webp" alt="Service.webp">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio__item">
+                                <div class="portfolio__item-text">1 страница <br><span>(popup)</span>
+                                </div>
+                                <div class="portfolio__item-link text"><a href="https://school.evgenyroslyakov.ru/"
+                                        target="_blank">Ссылка</a></div>
+                                <div class="portfolio__item-img"><img src="./image/school.webp" alt="School.webp">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="portfolio__item">
+                                <div class="portfolio__item-text">1 страница <br><span>(Flexbox, легкая анимация)</span>
+                                </div>
+                                <div class="portfolio__item-link text"><a href="https://interno.evgenyroslyakov.ru/"
+                                        target="_blank">Ссылка</a></div>
+                                <div class="portfolio__item-img"><img src="./image/interno.webp" alt="Interno.webp">
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="portfolio__item-link text"><a href="https://locus.evgenyroslyakov.ru/"
-                            target="_blank">Ссылка</a></div>
-                    <div class="portfolio__item-img"><img src="./image/Locus.webp" alt="Locus.webp"></div>
-                </div>
-                <div class="portfolio__item">
-                    <div class="portfolio__item-text">1 страница <br><span>(Flexbox)</span>
-                    </div>
-                    <div class="portfolio__item-link text"><a href="https://restaurant.evgenyroslyakov.ru/"
-                            target="_blank">Ссылка</a>
-                    </div>
-                    <div class="portfolio__item-img"><img src="./image/Restaurant.webp" alt="Restaurant.webp"></div>
-                </div>
-                <div class="portfolio__item">
-                    <div class="portfolio__item-text">4 страницы <br><span>(слайдер, Flexbox)</span>
-                    </div>
-                    <div class="portfolio__item-link text"><a href="https://maya.evgenyroslyakov.ru"
-                            target="_blank">Ссылка</a></div>
-                    <div class="portfolio__item-img"><img src="./image/Maya.webp" alt="Maya.webp"></div>
-                </div>
-                <div class="portfolio__item">
-                    <div class="portfolio__item-text">1 страница <br><span>(адаптив
-                            (480,768),слайдер,popup,forms,burger-menu)</span>
-                    </div>
-                    <div class="portfolio__item-link text"><a href="https://service.evgenyroslyakov.ru"
-                            target="_blank">Ссылка</a></div>
-                    <div class="portfolio__item-img"><img src="./image/Service.webp" alt="Service.webp"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
                 </div>
             </div>
-        </div>
+
     </section>
     <section class="contacts" id="contacts">
         <div class="contacts__title title">Contacts</div>
         <div class="container">
             <div class="contacts__list">
-                <div class="contacts__item"><a title="email" href="mailto:bamser@mail.ru"><img src="./image/email.svg"
-                            alt="email.svg"></a></div>
-                <div class="contacts__item"><a target="_blank" title="ВК" href="https://vk.com/id160131378"><img
+                <div class="contacts__item"><a target="_blank" title="Github" href="https://github.com/Bamser"><img
+                            src="./image/github.svg" alt="github.svg"></a>
+                </div>
+                <div class="contacts__item"><a target="_blank" title="vk.com" href="https://vk.com/id160131378"><img
                             src="./image/vk.svg" alt="email.svg"></a>
                 </div>
-                <div class="contacts__item"><a href="mailto:bamser@mail.ru"><img src="./image/email.svg"
-                            alt="email.svg"></a></div>
+                <div class="contacts__item"><a title="email" href="mailto:bamser@mail.ru"><img src="./image/email.svg"
+                            alt="email.svg"></a>
+                </div>
+
             </div>
         </div>
     </section>
+
+    <script src="./swiper-bundle.js"></script>
+    <script src="./main.js"></script>
+
 </body>
 
 </html>

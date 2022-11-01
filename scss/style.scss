@@ -95,7 +95,7 @@ ul {
     }
 }
 .skills {
-    padding-top: 10rem;
+    padding-top: 8rem;
     padding-bottom: 10rem;
   
     background-color: $first-color;
@@ -103,13 +103,9 @@ ul {
         text-align: center;
         color: $second-color ;
     }
-    &__text {
-        margin: 3rem auto;
-        color: $second-color ;
-        text-align: center;
-    }
     &__items {
-        margin-top: 10rem;
+        margin-top: 8rem;
+        margin-bottom: 3rem;
         display: flex;
         justify-content: space-between;
         gap: 3rem;
@@ -168,30 +164,43 @@ ul {
         &-img {
             padding-left: 10px;
             padding-right: 10px;
-            width: 20rem;
-            height: 70rem;
+            width: 28rem;
+            height: 60rem;
         }
     }
 }
 .contacts {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-top: 6rem;
+    padding-bottom: 7rem;
     background-color: $first-color;
     &__title {
         color: $second-color ;
     }
     &__list {
-        margin-top: 3rem;
+        margin-top: 4rem;
         display: flex;
         justify-content: center;
-        gap: 3rem;
+        gap: 5rem;
     }
     &__item img {
        width: 5rem;
        height: 5rem;
+       transition-duration: 500ms;
+       &:hover {
+        transform: scale(1.2);
+    }
     }
 }
-
+.swiper {
+    &-button-prev:after {
+        color: $first-color;
+        margin-right: 2.5rem;
+    }
+    &-button-next:after {
+        color: $first-color;
+        margin-left: 2.5rem;
+    }
+}
 @media (max-width:479.9px) {
 
     .title {
