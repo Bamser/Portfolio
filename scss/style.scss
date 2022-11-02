@@ -133,7 +133,7 @@ ul {
     margin-top: 10rem;
     margin-bottom: 10rem;
     &__items {
-        margin-top: 8rem;
+        margin-top: 5rem;
         margin-bottom: 8rem;
         display: flex;
         justify-content: center;
@@ -148,24 +148,32 @@ ul {
         object-fit: cover;
        & span {
         font-size: 1.2rem;
+        color: $second-color;
        }
        & a:hover {
         color: $second-color;
        }
        &-text {
         text-align: center;
-        font-size: 1.5rem;
+        font-size: 2rem;
         line-height: 1.5;
        }
-        &-link {
-         text-align: center;
-         margin-bottom: 1rem;
-        }
         &-img {
+            margin-top: 3rem;
             padding-left: 10px;
             padding-right: 10px;
             width: 28rem;
             height: 60rem;
+            transition-duration: 500ms;
+            & img {
+                border-radius: 1rem;
+            }
+            & a {
+                cursor: pointer;
+            }
+            &:hover {
+                transform: scale(1.07);
+            }
         }
     }
 }
