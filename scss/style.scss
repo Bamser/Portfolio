@@ -5,16 +5,16 @@ $second-color: #F3AE5F;
 
 .header {
     padding-bottom: 5rem;
-    nav {
+  
+    &__navbar {
         position: fixed;
         top: 0;
+        right: 50%;
+        transform: translateX(50%);
         min-width: 117rem;
         z-index: 1;
-    }
-    .navbar {
         display: flex;
         justify-content: space-between;
-        width: 100%;
       }
       .list-item {
         list-style-type: none;
@@ -47,10 +47,6 @@ $second-color: #F3AE5F;
           opacity: 1;
         }
       }
-
-
-
-
 .header__menu{
 padding-top: 3rem;
 ul {
@@ -95,10 +91,11 @@ ul {
     }
 }
 .skills {
+    min-width: 117rem;
     padding-top: 8rem;
     padding-bottom: 10rem;
-  
     background-color: $first-color;
+    background-size: cover;
     &__title {
         text-align: center;
         color: $second-color ;
@@ -106,8 +103,11 @@ ul {
     &__items {
         margin-top: 8rem;
         margin-bottom: 3rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         gap: 3rem;
     }
     &__item {
@@ -135,6 +135,8 @@ ul {
     &__items {
         margin-top: 5rem;
         margin-bottom: 8rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
         display: flex;
         justify-content: center;
         gap: 3rem;
@@ -209,76 +211,76 @@ ul {
         margin-left: 2.5rem;
     }
 }
-@media (max-width:479.9px) {
 
-    .title {
-        font-size: 7rem;
-    }
-    .text {
-        font-size: 3rem;
-        max-width: 70rem;
-    }
+@media (max-width: 48rem) {
     .header {
-    .header__menu{
-    ul {
-     display: flex;
-     justify-content: space-between;
-     li {
-        font-size: 3rem;
-     }
-    }
-    }
-    }
-    .who {
-        &__ami{
+        &__navbar {
+            min-width: 30rem;
+          }
+        }
+        .skills {
+            min-width: 27rem;
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+            &__items {
+                margin-top: 6rem;
+                padding-right: 1rem;
+                padding-left: 1rem;
+                justify-content: center;
+                gap: 1rem;
+            }
+            &__item {
+                padding: 1rem;
+                img {
+                    width: 13rem;
+                    height: 9rem; 
+                }
+                &_center {
+                    margin:auto;
+                }
+            }
+        }
+        .portfolio {
+            margin-left: 0;
             margin-top: 5rem;
-            &-name {
-                margin-top: 8rem;
+            margin-bottom: 2rem;
+            &__items {
+                margin-top: 2rem;
+                margin-bottom: 0;
+                gap: 1rem;
             }
-        }
-    }
-    .skills {
-        padding-bottom: 20rem;
-        &__items {
-            justify-content: center;
-        }
-        &__item {
-            img {
-                width: 20rem;
-                height: 15rem;
-            }
-            &-text {
-                font-size: 3rem;
-            }
-        }
-    }
-    .portfolio {
-        margin-bottom: 20rem;
-        &__item{
-            & span {
-                font-size: 3rem;
-                line-height: 1;
-               }
-               & a:hover {
-                color: $second-color;
-               }
+            &__item{
+                margin: auto;
+                max-width: 30rem;
                &-text {
-                font-size: 5rem;
-                line-height: 1;
+                font-size: 2.5rem;
+                line-height: 1.2;
                }
+                &-img {
+                    width: 25rem;
+                    height: 50rem;
+                }
+            }
         }
-    }
-    .contacts {
-        padding-top: 8rem;
-        padding-bottom: 8rem;
-        background-color: $first-color;
-        &__list {
-            margin-top: 5rem;
+        .contacts {
+            padding-top: 4rem;
+            padding-bottom: 4rem;
+            &__list {
+                gap: 4rem;
+            }
         }
-        &__item img {
-           width: 10rem;
-           height: 10rem;
+        .swiper {
+            &-button-prev:after {
+                margin-right: 0;
+                margin-right: -2rem;
+            }
+            &-button-next:after {
+                margin-left: 0;
+                margin-left: -2rem;
+            }
         }
-    }
+     
+      }
+     
 
-}
+

@@ -140,19 +140,23 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+@media (max-width: 48rem) {
+  .container {
+    width: 40rem;
+  }
+}
 .header {
   padding-bottom: 5rem;
 }
-.header nav {
+.header__navbar {
   position: fixed;
   top: 0;
+  right: 50%;
+  transform: translateX(50%);
   min-width: 117rem;
   z-index: 1;
-}
-.header .navbar {
   display: flex;
   justify-content: space-between;
-  width: 100%;
 }
 .header .list-item {
   list-style-type: none;
@@ -224,9 +228,11 @@ input[type=number] {
 }
 
 .skills {
+  min-width: 117rem;
   padding-top: 8rem;
   padding-bottom: 10rem;
   background-color: #014D69;
+  background-size: cover;
 }
 .skills__title {
   text-align: center;
@@ -235,8 +241,11 @@ input[type=number] {
 .skills__items {
   margin-top: 8rem;
   margin-bottom: 3rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   gap: 3rem;
 }
 .skills__item {
@@ -265,6 +274,8 @@ input[type=number] {
 .portfolio__items {
   margin-top: 5rem;
   margin-bottom: 8rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   display: flex;
   justify-content: center;
   gap: 3rem;
@@ -340,64 +351,67 @@ input[type=number] {
   margin-left: 2.5rem;
 }
 
-@media (max-width: 479.9px) {
-  .title {
-    font-size: 7rem;
-  }
-  .text {
-    font-size: 3rem;
-    max-width: 70rem;
-  }
-  .header .header__menu ul {
-    display: flex;
-    justify-content: space-between;
-  }
-  .header .header__menu ul li {
-    font-size: 3rem;
-  }
-  .who__ami {
-    margin-top: 5rem;
-  }
-  .who__ami-name {
-    margin-top: 8rem;
+@media (max-width: 48rem) {
+  .header__navbar {
+    min-width: 30rem;
   }
   .skills {
-    padding-bottom: 20rem;
+    min-width: 27rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
   }
   .skills__items {
+    margin-top: 6rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
     justify-content: center;
+    gap: 1rem;
+  }
+  .skills__item {
+    padding: 1rem;
   }
   .skills__item img {
-    width: 20rem;
-    height: 15rem;
+    width: 13rem;
+    height: 9rem;
   }
-  .skills__item-text {
-    font-size: 3rem;
+  .skills__item_center {
+    margin: auto;
   }
   .portfolio {
-    margin-bottom: 20rem;
+    margin-left: 0;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
   }
-  .portfolio__item span {
-    font-size: 3rem;
-    line-height: 1;
+  .portfolio__items {
+    margin-top: 2rem;
+    margin-bottom: 0;
+    gap: 1rem;
   }
-  .portfolio__item a:hover {
-    color: #F3AE5F;
+  .portfolio__item {
+    margin: auto;
+    max-width: 30rem;
   }
   .portfolio__item-text {
-    font-size: 5rem;
-    line-height: 1;
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+  .portfolio__item-img {
+    width: 25rem;
+    height: 50rem;
   }
   .contacts {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-    background-color: #014D69;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
   .contacts__list {
-    margin-top: 5rem;
+    gap: 4rem;
   }
-  .contacts__item img {
-    width: 10rem;
-    height: 10rem;
+  .swiper-button-prev:after {
+    margin-right: 0;
+    margin-right: -2rem;
+  }
+  .swiper-button-next:after {
+    margin-left: 0;
+    margin-left: -2rem;
   }
 }

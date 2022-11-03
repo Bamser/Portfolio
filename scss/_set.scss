@@ -136,4 +136,8 @@ input[type="number"] {
     -moz-appearance: textfield;
 }
 
-
+@media (max-width: 48rem){
+    .container {
+        width: 40rem;
+    }
+}
