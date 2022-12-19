@@ -351,6 +351,16 @@ input[type=number] {
   margin-left: 2.5rem;
 }
 
+@media (max-width: 76.8rem) {
+  .swiper-button-prev:after {
+    color: #014D69;
+    padding-right: 4rem;
+  }
+  .swiper-button-next:after {
+    color: #014D69;
+    padding-left: 4rem;
+  }
+}
 @media (max-width: 48rem) {
   .header__navbar {
     min-width: 30rem;

@@ -23,6 +23,7 @@ $second-color: #F3AE5F;
         display: flex;
         align-items: center;
         justify-content: center;
+      
         position: relative;
         color: $first-color;
         transform: translateY(0);
@@ -209,6 +210,19 @@ ul {
     &-button-next:after {
         color: $first-color;
         margin-left: 2.5rem;
+    }
+}
+
+@media (max-width: 76.8rem){
+    .swiper {
+        &-button-prev:after {
+            color: $first-color;
+            padding-right: 4rem;
+        }
+        &-button-next:after {
+            color: $first-color;
+            padding-left: 4rem;
+        }
     }
 }
 
