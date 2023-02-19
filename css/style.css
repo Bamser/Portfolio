@@ -117,10 +117,12 @@ ul li {
 }
 
 .title {
+  max-width: 60rem;
   text-align: center;
   font-weight: 700;
   font-size: 5rem;
   line-height: 1.2;
+  overflow: hidden;
 }
 
 .text {
@@ -166,7 +168,7 @@ input[type=number] {
   align-items: center;
   justify-content: center;
   position: relative;
-  color: #014D69;
+  color: #025A5B;
   transform: translateY(0);
   transition: transform 0.5s ease, opacity 0.2s ease;
   cursor: pointer;
@@ -180,7 +182,7 @@ input[type=number] {
   opacity: 0;
 }
 .header .list-item:hover {
-  color: #F3AE5F;
+  color: #E6984E;
   transform: translateY(-6px);
 }
 .header .list-item:hover .list-item-name {
@@ -196,12 +198,12 @@ input[type=number] {
   flex-wrap: wrap;
 }
 .header .header__menu ul li {
-  color: #F3AE5F;
+  color: #E6984E;
   font-size: 1.8rem;
   line-height: 1.2;
 }
 .header .header__menu ul li:hover {
-  color: #014D69;
+  color: #025A5B;
   transform: scale(1.1);
 }
 
@@ -231,12 +233,13 @@ input[type=number] {
   min-width: 117rem;
   padding-top: 8rem;
   padding-bottom: 10rem;
-  background-color: #014D69;
+  background-color: #025A5B;
   background-size: cover;
 }
 .skills__title {
   text-align: center;
-  color: #F3AE5F;
+  color: #E6984E;
+  margin: 0 auto;
 }
 .skills__items {
   margin-top: 8rem;
@@ -262,7 +265,7 @@ input[type=number] {
 .skills__item-text {
   margin-top: 1rem;
   text-align: center;
-  color: #F3AE5F;
+  color: #E6984E;
   font-size: 1.8rem;
   line-height: 1.5;
 }
@@ -270,6 +273,9 @@ input[type=number] {
 .portfolio {
   margin-top: 10rem;
   margin-bottom: 10rem;
+}
+.portfolio__title {
+  margin: 0 auto;
 }
 .portfolio__items {
   margin-top: 5rem;
@@ -291,10 +297,10 @@ input[type=number] {
 }
 .portfolio__item span {
   font-size: 1.2rem;
-  color: #F3AE5F;
+  color: #E6984E;
 }
 .portfolio__item a:hover {
-  color: #F3AE5F;
+  color: #E6984E;
 }
 .portfolio__item-text {
   text-align: center;
@@ -322,10 +328,11 @@ input[type=number] {
 .contacts {
   padding-top: 6rem;
   padding-bottom: 7rem;
-  background-color: #014D69;
+  background-color: #025A5B;
 }
 .contacts__title {
-  color: #F3AE5F;
+  color: #E6984E;
+  margin: 0 auto;
 }
 .contacts__list {
   margin-top: 4rem;
@@ -343,21 +350,21 @@ input[type=number] {
 }
 
 .swiper-button-prev:after {
-  color: #014D69;
+  color: #025A5B;
   margin-right: 2.5rem;
 }
 .swiper-button-next:after {
-  color: #014D69;
+  color: #025A5B;
   margin-left: 2.5rem;
 }
 
 @media (max-width: 76.8rem) {
   .swiper-button-prev:after {
-    color: #014D69;
+    color: #025A5B;
     padding-right: 4rem;
   }
   .swiper-button-next:after {
-    color: #014D69;
+    color: #025A5B;
     padding-left: 4rem;
   }
 }

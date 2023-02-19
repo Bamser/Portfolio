@@ -114,10 +114,12 @@ ul li {
     margin: 0 auto;
 }
 .title {
+    max-width: 60rem;
     text-align: center;
     font-weight: 700;
     font-size: 5rem;
     line-height: 1.2;
+    overflow: hidden;
 }
 .text {
     text-align: center;
