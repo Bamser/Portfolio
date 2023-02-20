@@ -198,14 +198,14 @@ ul {
         margin-top: 4rem;
         display: flex;
         justify-content: center;
-        gap: 5rem;
+        gap: 2rem;
     }
     &__item img {
        width: 5rem;
        height: 5rem;
        transition-duration: 500ms;
        &:hover {
-        transform: scale(1.2);
+        transform: scale(1.1);
     }
     }
 }

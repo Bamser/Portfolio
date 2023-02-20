@@ -123,6 +123,7 @@ ul li {
   font-size: 5rem;
   line-height: 1.2;
   overflow: hidden;
+  letter-spacing: 0.5rem;
 }
 
 .text {
@@ -340,7 +341,7 @@ input[type=number] {
   margin-top: 4rem;
   display: flex;
   justify-content: center;
-  gap: 5rem;
+  gap: 2rem;
 }
 .contacts__item img {
   width: 5rem;
@@ -348,7 +349,7 @@ input[type=number] {
   transition-duration: 500ms;
 }
 .contacts__item img:hover {
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .swiper {
