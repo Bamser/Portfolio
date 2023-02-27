@@ -112,7 +112,7 @@ ul li {
 }
 
 .container {
-  width: 117rem;
+  max-width: 117rem;
   margin: 0 auto;
 }
 
@@ -235,7 +235,6 @@ input[type=number] {
 }
 
 .skills {
-  min-width: 117rem;
   padding-top: 8rem;
   padding-bottom: 10rem;
   background-color: #025A5B;
@@ -254,7 +253,7 @@ input[type=number] {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 3rem;
+  gap: 2rem;
 }
 .skills__item {
   padding: 1.5rem;
@@ -311,6 +310,7 @@ input[type=number] {
   text-align: center;
   font-size: 2rem;
   line-height: 1.5;
+  height: 76px;
 }
 .portfolio__item-img {
   margin-top: 3rem;
@@ -340,6 +340,7 @@ input[type=number] {
   margin: 0 auto;
 }
 .contacts__list {
+  padding: 0 10px;
   margin-top: 4rem;
   display: flex;
   justify-content: center;
@@ -369,7 +370,10 @@ input[type=number] {
 .swiper-button-left {
   transform: translateX(-5rem);
 }
-@media (max-width: 76.8rem) {
+@media (max-width: 768.9px) {
+  .header__navbar {
+    min-width: 55rem;
+  }
   .swiper-button-prev:after {
     color: #025A5B;
     padding-right: 4rem;
@@ -378,8 +382,15 @@ input[type=number] {
     color: #025A5B;
     padding-left: 4rem;
   }
+  .contacts__list {
+    gap: 3rem;
+  }
+  .contacts__item img {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
 }
-@media (max-width: 48rem) {
+@media (max-width: 479.9px) {
   .header__navbar {
     min-width: 30rem;
   }
@@ -432,7 +443,11 @@ input[type=number] {
     padding-bottom: 4rem;
   }
   .contacts__list {
-    gap: 4rem;
+    gap: 2rem;
+  }
+  .contacts__item img {
+    width: 3.5em;
+    height: 3.5rem;
   }
   .swiper-button-prev:after {
     margin-right: 0;

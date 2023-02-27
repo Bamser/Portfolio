@@ -95,7 +95,6 @@ ul {
     }
 }
 .skills {
-    min-width: 117rem;
     padding-top: 8rem;
     padding-bottom: 10rem;
     background-color: $first-color;
@@ -113,7 +112,7 @@ ul {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        gap: 3rem;
+        gap: 2rem;
     }
     &__item {
         padding: 1.5rem;
@@ -167,6 +166,7 @@ ul {
         text-align: center;
         font-size: 2rem;
         line-height: 1.5;
+        height: 76px;
        }
         &-img {
             margin-top: 3rem;
@@ -196,6 +196,7 @@ ul {
         margin: 0 auto;
     }
     &__list {
+        padding: 0 10px;
         margin-top: 4rem;
         display: flex;
         justify-content: center;
@@ -229,7 +230,12 @@ ul {
     }
 }
 
-@media (max-width: 76.8rem){
+@media  (max-width: 768.9px){
+    .header {
+        &__navbar {
+            min-width: 55rem;
+          }
+        }
     .swiper {
         &-button-prev:after {
             color: $first-color;
@@ -240,9 +246,19 @@ ul {
             padding-left: 4rem;
         }
     }
+    .contacts {
+     
+        &__list {
+            gap: 3rem;
+        }
+        &__item img {
+            width: 4.5rem;
+            height: 4.5rem;
+         }
+    }
 }
 
-@media (max-width: 48rem) {
+@media (max-width: 479.9px) {
     .header {
         &__navbar {
             min-width: 30rem;
@@ -296,8 +312,12 @@ ul {
             padding-top: 4rem;
             padding-bottom: 4rem;
             &__list {
-                gap: 4rem;
+                gap: 2rem;
             }
+            &__item img {
+                width: 3.5em;
+                height: 3.5rem;
+             }
         }
         .swiper {
             &-button-prev:after {
