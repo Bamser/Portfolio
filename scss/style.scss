@@ -154,18 +154,15 @@ $second-color: #e6984e;
     max-width: 40rem;
     overflow: hidden;
     object-fit: cover;
-    & span {
-      font-size: 1.2rem;
-      color: $second-color;
-    }
-    & a:hover {
-      color: $second-color;
-    }
-    &-text {
-      text-align: center;
-      font-size: 2rem;
-      line-height: 1.5;
-      height: 76px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      background-image: url(../image/scroll.svg);
+      width: 32px;
+      height: 32px;
+      top: -10px;
+      left: 170px;
     }
     &-img {
       margin-top: 3rem;

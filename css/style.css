@@ -309,19 +309,16 @@ input[type=number] {
   overflow: hidden;
   -o-object-fit: cover;
      object-fit: cover;
+  position: relative;
 }
-.portfolio__item span {
-  font-size: 1.2rem;
-  color: #e6984e;
-}
-.portfolio__item a:hover {
-  color: #e6984e;
-}
-.portfolio__item-text {
-  text-align: center;
-  font-size: 2rem;
-  line-height: 1.5;
-  height: 76px;
+.portfolio__item::before {
+  content: "";
+  position: absolute;
+  background-image: url(../image/scroll.svg);
+  width: 32px;
+  height: 32px;
+  top: -10px;
+  left: 170px;
 }
 .portfolio__item-img {
   margin-top: 3rem;
