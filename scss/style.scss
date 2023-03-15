@@ -4,69 +4,35 @@ $second-color: #e6984e;
 
 .header {
   padding-bottom: 5rem;
-
-  &__navbar {
-    position: fixed;
-    top: 0;
-    right: 50%;
-    transform: translateX(50%);
-    min-width: 117rem;
-    z-index: 1;
+  &__nav {
+    margin-top: 15px;
+    padding: 0 2rem;
+    font-family: "Titan One", sans-serif;
+  }
+  &__list {
     display: flex;
     justify-content: space-between;
   }
-  .list-item {
-    list-style-type: none;
-    flex-basis: 100%;
-    min-height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
+  &__item {
     position: relative;
-    color: $first-color;
-    transform: translateY(0);
-    transition: transform 0.5s ease, opacity 0.2s ease;
-    cursor: pointer;
-  }
-
-  .list-item-name {
-    font-size: 15px;
-    font-weight: 500;
-    position: absolute;
-    transform: translate(0, 50px);
-    transition: transform 0.5s ease, opacity 0.2s ease;
-    opacity: 0;
-  }
-
-  .list-item:hover {
-    color: $second-color;
-    transform: translateY(-6px);
-    .list-item-name {
-      transform: translateY(35px);
-      opacity: 1;
+    font-size: 25px;
+    & a::before {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      width: 100%;
+      height: 3px;
+      background-color: $first-color;
+      transform: scale(0);
+      transition: all 0.3s ease 0s;
     }
-  }
-  .header__menu {
-    padding-top: 3rem;
-    ul {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      li {
-        color: $second-color;
-        font-size: 1.8rem;
-        line-height: 1.2;
-        &:hover {
-          color: $first-color;
-          transform: scale(1.1);
-        }
-      }
+    & a:hover::before {
+      transform: scale(1);
     }
   }
 }
 .who {
-  margin-top: 15rem;
+  margin-top: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -114,21 +80,17 @@ $second-color: #e6984e;
     gap: 2rem;
   }
   &__item {
-    padding: 1.5rem;
-    background-color: #0b87ba;
+    padding: 2rem 0.5rem;
+    background-color: #025a5b;
     border-radius: 10%;
     opacity: 0.9;
     box-shadow: 0.7rem 0.7rem 0.7rem rgba(0, 0, 0, 0.7);
-    img {
-      width: 15rem;
-      height: 10rem;
+    &:hover {
+      box-shadow: 0.3rem 0.3rem 0.7rem rgba(255, 255, 255, 0.7);
     }
-    &-text {
-      margin-top: 1rem;
-      text-align: center;
-      color: $second-color;
-      font-size: 1.8rem;
-      line-height: 1.5;
+    img {
+      width: 12rem;
+      height: 10rem;
     }
   }
 }
@@ -162,7 +124,7 @@ $second-color: #e6984e;
       width: 32px;
       height: 32px;
       top: -10px;
-      left: 170px;
+      left: 162px;
     }
     &-img {
       margin-top: 3rem;
@@ -233,8 +195,22 @@ $second-color: #e6984e;
 
 @media (max-width: 768.9px) {
   .header {
-    &__navbar {
-      min-width: 55rem;
+    &__nav {
+      padding: 0 1rem;
+    }
+    &__list {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__item {
+      font-size: 2rem;
+    }
+  }
+  .portfolio {
+    &__item {
+      &::before {
+        left: 80px;
+      }
     }
   }
   .swiper {
@@ -260,8 +236,38 @@ $second-color: #e6984e;
 
 @media (max-width: 479.9px) {
   .header {
-    &__navbar {
-      min-width: 30rem;
+    padding-bottom: 3rem;
+    &__nav {
+    }
+    &__list {
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem 0;
+    }
+    &__item {
+      width: 15rem;
+      font-size: 2.5rem;
+    }
+    & a::before {
+      display: none;
+    }
+  }
+  .who {
+    margin-top: 5rem;
+    &__ami {
+      &-name {
+        margin-top: 5rem;
+      }
+    }
+    &__img {
+      & img {
+        max-width: 30rem;
+        padding: 0.1rem;
+        box-shadow: 0 0 2rem $first-color;
+        &:hover {
+          transform: none;
+        }
+      }
     }
   }
   .skills {
@@ -288,7 +294,9 @@ $second-color: #e6984e;
   }
   .portfolio {
     margin-left: 0;
-    margin-top: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+
     &__items {
       margin-top: 2rem;
       margin-bottom: 0;
@@ -297,6 +305,9 @@ $second-color: #e6984e;
     &__item {
       margin: auto;
       max-width: 30rem;
+      &::before {
+        left: 128px;
+      }
       &-text {
         font-size: 2.5rem;
         line-height: 1.2;
@@ -304,6 +315,9 @@ $second-color: #e6984e;
       &-img {
         width: 25rem;
         height: 50rem;
+        &:hover {
+          transform: scale(1);
+        }
       }
     }
   }
@@ -316,6 +330,9 @@ $second-color: #e6984e;
     &__item img {
       width: 3.5em;
       height: 3.5rem;
+      &:hover {
+        transform: scale(1);
+      }
     }
   }
   .swiper {

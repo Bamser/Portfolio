@@ -1,7 +1,5 @@
-const swiper = new Swiper('.swiper', {
-    loop: true,
-  slidesPerView: 3,
-  slidesPerGroup: 3,
+const swiper = new Swiper(".swiper", {
+  loop: true,
   speed: 1500,
   breakpoints: {
     320: {
@@ -16,15 +14,12 @@ const swiper = new Swiper('.swiper', {
     },
     780: {
       slidesPerView: 3,
-      slidesPerGroup: 3,
-    }
-   
+      slidesPerGroup: 1,
+    },
   },
-  
-    navigation: {
-      nextEl: '.swiper-button-right',
-      prevEl: '.swiper-button-left',
-    }
-  
-  });
- 
+
+  navigation: {
+    nextEl: ".swiper-button-right",
+    prevEl: ".swiper-button-left",
+  },
+});

@@ -163,65 +163,35 @@ input[type=number] {
 .header {
   padding-bottom: 5rem;
 }
-.header__navbar {
-  position: fixed;
-  top: 0;
-  right: 50%;
-  transform: translateX(50%);
-  min-width: 117rem;
-  z-index: 1;
+.header__nav {
+  margin-top: 15px;
+  padding: 0 2rem;
+  font-family: "Titan One", sans-serif;
+}
+.header__list {
   display: flex;
   justify-content: space-between;
 }
-.header .list-item {
-  list-style-type: none;
-  flex-basis: 100%;
-  min-height: 80px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.header__item {
   position: relative;
-  color: #025a5b;
-  transform: translateY(0);
-  transition: transform 0.5s ease, opacity 0.2s ease;
-  cursor: pointer;
+  font-size: 25px;
 }
-.header .list-item-name {
-  font-size: 15px;
-  font-weight: 500;
+.header__item a::before {
+  content: "";
   position: absolute;
-  transform: translate(0, 50px);
-  transition: transform 0.5s ease, opacity 0.2s ease;
-  opacity: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 3px;
+  background-color: #025a5b;
+  transform: scale(0);
+  transition: all 0.3s ease 0s;
 }
-.header .list-item:hover {
-  color: #e6984e;
-  transform: translateY(-6px);
-}
-.header .list-item:hover .list-item-name {
-  transform: translateY(35px);
-  opacity: 1;
-}
-.header .header__menu {
-  padding-top: 3rem;
-}
-.header .header__menu ul {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-.header .header__menu ul li {
-  color: #e6984e;
-  font-size: 1.8rem;
-  line-height: 1.2;
-}
-.header .header__menu ul li:hover {
-  color: #025a5b;
-  transform: scale(1.1);
+.header__item a:hover::before {
+  transform: scale(1);
 }
 
 .who {
-  margin-top: 15rem;
+  margin-top: 10rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -267,22 +237,18 @@ input[type=number] {
   gap: 2rem;
 }
 .skills__item {
-  padding: 1.5rem;
-  background-color: #0b87ba;
+  padding: 2rem 0.5rem;
+  background-color: #025a5b;
   border-radius: 10%;
   opacity: 0.9;
   box-shadow: 0.7rem 0.7rem 0.7rem rgba(0, 0, 0, 0.7);
 }
-.skills__item img {
-  width: 15rem;
-  height: 10rem;
+.skills__item:hover {
+  box-shadow: 0.3rem 0.3rem 0.7rem rgba(255, 255, 255, 0.7);
 }
-.skills__item-text {
-  margin-top: 1rem;
-  text-align: center;
-  color: #e6984e;
-  font-size: 1.8rem;
-  line-height: 1.5;
+.skills__item img {
+  width: 12rem;
+  height: 10rem;
 }
 
 .portfolio {
@@ -318,7 +284,7 @@ input[type=number] {
   width: 32px;
   height: 32px;
   top: -10px;
-  left: 170px;
+  left: 162px;
 }
 .portfolio__item-img {
   margin-top: 3rem;
@@ -384,8 +350,18 @@ input[type=number] {
   transform: translateX(-5rem);
 }
 @media (max-width: 768.9px) {
-  .header__navbar {
-    min-width: 55rem;
+  .header__nav {
+    padding: 0 1rem;
+  }
+  .header__list {
+    display: flex;
+    justify-content: space-between;
+  }
+  .header__item {
+    font-size: 2rem;
+  }
+  .portfolio__item::before {
+    left: 80px;
   }
   .swiper-button-prev:after {
     color: #025a5b;
@@ -404,8 +380,34 @@ input[type=number] {
   }
 }
 @media (max-width: 479.9px) {
-  .header__navbar {
-    min-width: 30rem;
+  .header {
+    padding-bottom: 3rem;
+  }
+  .header__list {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem 0;
+  }
+  .header__item {
+    width: 15rem;
+    font-size: 2.5rem;
+  }
+  .header a::before {
+    display: none;
+  }
+  .who {
+    margin-top: 5rem;
+  }
+  .who__ami-name {
+    margin-top: 5rem;
+  }
+  .who__img img {
+    max-width: 30rem;
+    padding: 0.1rem;
+    box-shadow: 0 0 2rem #025a5b;
+  }
+  .who__img img:hover {
+    transform: none;
   }
   .skills {
     min-width: 27rem;
@@ -431,7 +433,8 @@ input[type=number] {
   }
   .portfolio {
     margin-left: 0;
-    margin-top: 5rem;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
   }
   .portfolio__items {
     margin-top: 2rem;
@@ -442,6 +445,9 @@ input[type=number] {
     margin: auto;
     max-width: 30rem;
   }
+  .portfolio__item::before {
+    left: 128px;
+  }
   .portfolio__item-text {
     font-size: 2.5rem;
     line-height: 1.2;
@@ -449,6 +455,9 @@ input[type=number] {
   .portfolio__item-img {
     width: 25rem;
     height: 50rem;
+  }
+  .portfolio__item-img:hover {
+    transform: scale(1);
   }
   .contacts {
     padding-top: 4rem;
@@ -460,6 +469,9 @@ input[type=number] {
   .contacts__item img {
     width: 3.5em;
     height: 3.5rem;
+  }
+  .contacts__item img:hover {
+    transform: scale(1);
   }
   .swiper-button-prev:after {
     margin-right: 0;
