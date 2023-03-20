@@ -1,4 +1,4 @@
-@import "_set";
+@import '_set';
 $first-color: #025a5b;
 $second-color: #e6984e;
 
@@ -7,7 +7,7 @@ $second-color: #e6984e;
   &__nav {
     margin-top: 15px;
     padding: 0 2rem;
-    font-family: "Titan One", sans-serif;
+    font-family: 'Titan One', sans-serif;
   }
   &__list {
     display: flex;
@@ -17,7 +17,7 @@ $second-color: #e6984e;
     position: relative;
     font-size: 25px;
     & a::before {
-      content: "";
+      content: '';
       position: absolute;
       bottom: -2px;
       width: 100%;
@@ -118,7 +118,7 @@ $second-color: #e6984e;
     object-fit: cover;
     position: relative;
     &::before {
-      content: "";
+      content: '';
       position: absolute;
       background-image: url(../image/scroll.svg);
       width: 32px;
@@ -282,7 +282,7 @@ $second-color: #e6984e;
       gap: 1rem;
     }
     &__item {
-      padding: 1rem;
+      padding: 1rem 0.5rem;
       img {
         width: 13rem;
         height: 9rem;
@@ -344,6 +344,12 @@ $second-color: #e6984e;
       margin-left: 0;
       margin-left: -2rem;
     }
+  }
+  .text {
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    max-width: 25rem;
   }
 }
 

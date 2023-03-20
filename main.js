@@ -1,6 +1,6 @@
-const swiper = new Swiper(".swiper", {
-  loop: true,
-  speed: 1500,
+const swiper = new Swiper('.swiper', {
+  loop: false,
+  speed: 1000,
   breakpoints: {
     320: {
       slidesPerView: 1,
@@ -9,7 +9,7 @@ const swiper = new Swiper(".swiper", {
     // when window width is >= 480px
     480: {
       slidesPerView: 2,
-      slidesPerGroup: 2,
+      slidesPerGroup: 1,
       spaceBetween: 30,
     },
     780: {
@@ -19,7 +19,7 @@ const swiper = new Swiper(".swiper", {
   },
 
   navigation: {
-    nextEl: ".swiper-button-right",
-    prevEl: ".swiper-button-left",
+    nextEl: '.swiper-button-right',
+    prevEl: '.swiper-button-left',
   },
 });

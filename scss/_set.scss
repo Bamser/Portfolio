@@ -9,7 +9,7 @@
 }
 
 html {
-  font-family: "Poppins", sans-serif; // шрифт по умолчанию по сайту
+  font-family: 'Poppins', sans-serif; // шрифт по умолчанию по сайту
   font-size: 10px; // на разрешении 1600 0.625vw === 10px
   font-style: normal;
   font-weight: 500;
@@ -124,7 +124,7 @@ ul li {
   margin: 0 auto;
 }
 .title {
-  font-family: "Titan One", sans-serif;
+  font-family: 'Titan One', sans-serif;
   max-width: 60rem;
   text-align: center;
   font-weight: 700;
@@ -140,18 +140,18 @@ ul li {
   max-width: 50rem;
 }
 
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
 
-input[type="number"] {
+input[type='number'] {
   -moz-appearance: textfield;
 }
 
 @media (max-width: 48rem) {
   .container {
-    width: 40rem;
+    width: 100%;
   }
 }

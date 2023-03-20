@@ -157,7 +157,7 @@ input[type=number] {
 
 @media (max-width: 48rem) {
   .container {
-    width: 40rem;
+    width: 100%;
   }
 }
 .header {
@@ -422,7 +422,7 @@ input[type=number] {
     gap: 1rem;
   }
   .skills__item {
-    padding: 1rem;
+    padding: 1rem 0.5rem;
   }
   .skills__item img {
     width: 13rem;
@@ -480,6 +480,12 @@ input[type=number] {
   .swiper-button-next:after {
     margin-left: 0;
     margin-left: -2rem;
+  }
+  .text {
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 1.5;
+    max-width: 25rem;
   }
 }
 .portfolio__item::-webkit-scrollbar-thumb {
