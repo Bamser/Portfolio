@@ -2,6 +2,19 @@
 $first-color: #025a5b;
 $second-color: #e6984e;
 
+@keyframes smooth {
+  0% {
+    opacity: 0;
+    transform: translateY(-150px);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .header {
   padding-bottom: 5rem;
   &__nav {
@@ -41,6 +54,7 @@ $second-color: #e6984e;
     &-name {
       margin-top: 8rem;
       letter-spacing: 0.1rem;
+      animation: smooth 4s;
     }
     &-text {
       margin: 3rem auto;

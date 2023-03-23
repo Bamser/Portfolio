@@ -138,6 +138,17 @@ ul li {
   letter-spacing: 0.5rem;
 }
 
+.title__animation {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.title__show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1s;
+}
+
 .text {
   text-align: center;
   font-size: 1.8rem;
@@ -158,6 +169,19 @@ input[type=number] {
 @media (max-width: 48rem) {
   .container {
     width: 100%;
+  }
+}
+@keyframes smooth {
+  0% {
+    opacity: 0;
+    transform: translateY(-150px);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 .header {
@@ -200,6 +224,7 @@ input[type=number] {
 .who__ami-name {
   margin-top: 8rem;
   letter-spacing: 0.1rem;
+  animation: smooth 4s;
 }
 .who__ami-text {
   margin: 3rem auto;

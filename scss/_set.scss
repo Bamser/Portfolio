@@ -133,6 +133,15 @@ ul li {
   overflow: hidden;
   letter-spacing: 0.5rem;
 }
+.title__animation {
+  opacity: 0;
+  transform: translateY(40px);
+}
+.title__show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 1s;
+}
 .text {
   text-align: center;
   font-size: 1.8rem;
