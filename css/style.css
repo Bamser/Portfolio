@@ -198,7 +198,7 @@ input[type=number] {
 }
 .header__item {
   position: relative;
-  font-size: 25px;
+  font-size: 2.5rem;
 }
 .header__item a::before {
   content: "";
@@ -334,6 +334,7 @@ input[type=number] {
 }
 
 .contacts {
+  position: relative;
   padding-top: 6rem;
   padding-bottom: 7rem;
   background-color: #025a5b;
@@ -382,9 +383,6 @@ input[type=number] {
     display: flex;
     justify-content: space-between;
   }
-  .header__item {
-    font-size: 2rem;
-  }
   .portfolio__item::before {
     left: 80px;
   }
@@ -410,12 +408,11 @@ input[type=number] {
   }
   .header__list {
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 2rem 0;
+    gap: 1rem;
   }
   .header__item {
-    width: 15rem;
-    font-size: 2.5rem;
+    max-width: 15rem;
+    font-size: 2rem;
   }
   .header a::before {
     display: none;

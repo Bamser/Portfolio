@@ -15,6 +15,7 @@ $second-color: #e6984e;
     transform: translateY(0);
   }
 }
+
 .header {
   padding-bottom: 5rem;
   &__nav {
@@ -28,7 +29,7 @@ $second-color: #e6984e;
   }
   &__item {
     position: relative;
-    font-size: 25px;
+    font-size: 2.5rem;
     & a::before {
       content: '';
       position: absolute;
@@ -164,6 +165,7 @@ $second-color: #e6984e;
   }
 }
 .contacts {
+  position: relative;
   padding-top: 6rem;
   padding-bottom: 7rem;
   background-color: $first-color;
@@ -216,9 +218,6 @@ $second-color: #e6984e;
       display: flex;
       justify-content: space-between;
     }
-    &__item {
-      font-size: 2rem;
-    }
   }
   .portfolio {
     &__item {
@@ -255,12 +254,11 @@ $second-color: #e6984e;
     }
     &__list {
       justify-content: center;
-      flex-wrap: wrap;
-      gap: 2rem 0;
+      gap: 1rem;
     }
     &__item {
-      width: 15rem;
-      font-size: 2.5rem;
+      max-width: 15rem;
+      font-size: 2rem;
     }
     & a::before {
       display: none;
