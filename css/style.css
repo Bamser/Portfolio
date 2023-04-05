@@ -224,7 +224,7 @@ input[type=number] {
 .who__ami-name {
   margin-top: 8rem;
   letter-spacing: 0.1rem;
-  animation: smooth 4s;
+  animation: smooth 6s;
 }
 .who__ami-text {
   margin: 3rem auto;
