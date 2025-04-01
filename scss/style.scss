@@ -46,16 +46,16 @@ $second-color: #e6984e;
   }
 }
 .who {
-  margin-top: 10rem;
+  margin-top: 5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   &__ami {
     &-name {
-      margin-top: 8rem;
+      margin-top: 1.5rem;
       letter-spacing: 0.1rem;
-      animation: smooth 6s;
+      animation: smooth 3s;
     }
     &-text {
       margin: 3rem auto;
@@ -63,12 +63,12 @@ $second-color: #e6984e;
   }
   &__img {
     & img {
-      max-width: 35rem;
+      max-width: 25rem;
       border-radius: 5rem;
       transition-duration: 500ms;
       opacity: 0.9;
       &:hover {
-        transform: scale(1.2);
+        transform: scale(1.1);
         padding: 0.1rem;
         box-shadow: 0 0 2rem $first-color;
       }
