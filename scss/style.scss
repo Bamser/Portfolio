@@ -76,6 +76,34 @@ $second-color: #e6984e;
     }
   }
 }
+
+// Спойлер секции "Обо мне"
+.who__toggle-btn {
+  font-family: 'Titan One', sans-serif;
+  display: block;
+  margin: 3rem auto;
+  padding: 1rem 2rem;
+  background-color: $second-color;
+  color: $first-color;
+  border-radius: 10px;
+  font-size: 1.8rem;
+  transition: background-color 0.3s;
+}
+
+.who__toggle-btn:hover {
+  background-color: $first-color;
+  color: $second-color;
+}
+
+.who__ami-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.who__ami-content.active {
+  max-height: 50rem;
+}
 .skills {
   margin-top: -30px;
   border-radius: 30px;

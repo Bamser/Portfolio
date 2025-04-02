@@ -240,6 +240,33 @@ input[type=number] {
   box-shadow: 0 0 2rem #025a5b;
 }
 
+.who__toggle-btn {
+  font-family: "Titan One", sans-serif;
+  display: block;
+  margin: 3rem auto;
+  padding: 1rem 2rem;
+  background-color: #e6984e;
+  color: #025a5b;
+  border-radius: 10px;
+  font-size: 1.8rem;
+  transition: background-color 0.3s;
+}
+
+.who__toggle-btn:hover {
+  background-color: #025a5b;
+  color: #e6984e;
+}
+
+.who__ami-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease;
+}
+
+.who__ami-content.active {
+  max-height: 50rem;
+}
+
 .skills {
   margin-top: -30px;
   border-radius: 30px;

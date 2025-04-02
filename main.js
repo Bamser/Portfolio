@@ -22,28 +22,39 @@ const swiper = new Swiper('.swiper', {
     nextEl: '.swiper-button-right',
     prevEl: '.swiper-button-left',
   },
-});
+})
 
 // Анимашка при скролле
 function onEntry(entry) {
   entry.forEach((change) => {
     // Если элемент в зоне видимости, то класс добавляется
     if (change.isIntersecting) {
-      change.target.classList.add('title__show');
+      change.target.classList.add('title__show')
     }
     // Если элемент пропал из зоны видимости, то класс убирается
     else {
-      change.target.classList.remove('title__show');
+      change.target.classList.remove('title__show')
     }
-  });
+  })
 }
 
 let options = {
   threshold: [0.5],
-};
-let observer = new IntersectionObserver(onEntry, options);
-let elements = document.querySelectorAll('.title__animation');
+}
+let observer = new IntersectionObserver(onEntry, options)
+let elements = document.querySelectorAll('.title__animation')
 
 for (let elm of elements) {
-  observer.observe(elm);
+  observer.observe(elm)
 }
+
+// Логика секции обо мне
+const toggleBtn = document.querySelector('.who__toggle-btn')
+const content = document.querySelector('.who__ami-content')
+
+toggleBtn.addEventListener('click', () => {
+  content.classList.toggle('active')
+  toggleBtn.textContent = content.classList.contains('active')
+    ? 'Скрыть'
+    : 'Обо мне'
+})
