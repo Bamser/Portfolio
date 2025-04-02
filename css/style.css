@@ -28,7 +28,7 @@ body {
   margin: 0;
   padding: 0;
   color: #025a5b;
-  background-color: #f8f8f8;
+  background-color: #e6984e;
 }
 body::-webkit-scrollbar {
   width: 15px;
@@ -44,7 +44,6 @@ body::-webkit-scrollbar-thumb {
 
 input,
 textarea {
-  -webkit-animation: bugfix infinite 1s;
   line-height: inherit;
   margin: 0;
   padding: 0;
@@ -184,10 +183,11 @@ input[type=number] {
   }
 }
 .header {
-  padding-bottom: 5rem;
+  padding-bottom: 7rem;
+  background-color: #f4ece1;
 }
 .header__nav {
-  margin-top: 15px;
+  padding-top: 15px;
   padding: 0 2rem;
   font-family: "Titan One", sans-serif;
 }
@@ -241,6 +241,8 @@ input[type=number] {
 }
 
 .skills {
+  margin-top: -30px;
+  border-radius: 30px;
   padding-top: 8rem;
   padding-bottom: 10rem;
   background-color: #025a5b;
@@ -277,8 +279,9 @@ input[type=number] {
 }
 
 .portfolio {
-  margin-top: 10rem;
-  margin-bottom: 7rem;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  background-color: #e6984e;
 }
 .portfolio__title {
   margin: 0 auto;
@@ -334,9 +337,10 @@ input[type=number] {
 }
 
 .contacts {
+  border-radius: 30px 30px 0 0;
   position: relative;
-  padding-top: 6rem;
-  padding-bottom: 7rem;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
   background-color: #025a5b;
 }
 .contacts__title {

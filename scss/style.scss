@@ -17,9 +17,10 @@ $second-color: #e6984e;
 }
 
 .header {
-  padding-bottom: 5rem;
+  padding-bottom: 7rem;
+  background-color: #f4ece1;
   &__nav {
-    margin-top: 15px;
+    padding-top: 15px;
     padding: 0 2rem;
     font-family: 'Titan One', sans-serif;
   }
@@ -76,6 +77,8 @@ $second-color: #e6984e;
   }
 }
 .skills {
+  margin-top: -30px;
+  border-radius: 30px;
   padding-top: 8rem;
   padding-bottom: 10rem;
   background-color: $first-color;
@@ -111,8 +114,9 @@ $second-color: #e6984e;
   }
 }
 .portfolio {
-  margin-top: 10rem;
-  margin-bottom: 7rem;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+  background-color: #e6984e;
   &__title {
     margin: 0 auto;
   }
@@ -166,9 +170,10 @@ $second-color: #e6984e;
   }
 }
 .contacts {
+  border-radius: 30px 30px 0 0;
   position: relative;
-  padding-top: 6rem;
-  padding-bottom: 7rem;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
   background-color: $first-color;
   &__title {
     color: $second-color;

@@ -29,7 +29,7 @@ body {
   margin: 0;
   padding: 0;
   color: #025a5b; // цвет по умолчанию текста по сайту
-  background-color: #f8f8f8; //
+  background-color: #e6984e; //
   &::-webkit-scrollbar {
     width: 15px;
   }
@@ -45,7 +45,6 @@ body {
 
 input,
 textarea {
-  -webkit-animation: bugfix infinite 1s;
   line-height: inherit;
   margin: 0;
   padding: 0;
